@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.card {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 3.5rem;
+    background-color: #fff;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 0 20px #0002;
+}
+
+.card .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 70, 107);
+    color: #fff;
+    padding: 0.75rem 1rem;
+}
+
+.card .heading .logo {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.card .heading .logo svg {
+    width: 25px !important;
+    object-fit: cover;
+}
+
+.card .heading .logo .title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.card .main .content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    height: 100%;
+    max-height: 500px;
+    min-height: 400px;
+
+}
+
+.card .message {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0.75rem;
+
+}
+
+.card .message.active {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.card .message .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(5, 70, 107,0.7);
+    overflow: hidden;
+    padding: 0.75rem;
+    transform: translateY(0.2rem);
+
+}
+
+.card .message .user svg {
+    width: 22px !important;
+    object-fit: cover;
+
+}
+
+.card .message .message-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+    padding: 1rem 1.75rem;
+    background-color: #f1f1f1;
+    border-radius: 2rem;
+    border-top-left-radius: 0rem;
+}
+
+.card .message.active .message-content {
+    color: #fff;
+    background-color: rgba(5, 70, 107,0.7);
+    border-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 0.15rem;
+}
+
+.card .message .message-content p {
+    font-size: 13.5px;
+    line-height: 20px;
+    color: #111;
+}
+
+.card .message.active .message-content p {
+    color: #fff;
+}
+
+.card .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+}
+
+.card .footer .box {
+    border: 1px solid rgba(5, 70, 107, 0.8);
+    padding: 0.75rem 0.5rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+    border-radius: 2rem;
+    height: fit-content;
+    height: 44px;
+
+}
+
+.card .footer .box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #000;
+    padding: 0.5rem;
+    padding-left: 0.5rem;
+
+}
+
+.card .footer .box .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: rgba(5, 70, 107, 0.8);
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+.card .footer .box .icon.active,
+.card .footer .box .icon:hover {
+    background-color: rgba(5, 70, 107, 0.8);
+    color: #fff;
+
+}
